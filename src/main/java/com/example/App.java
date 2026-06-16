@@ -12,7 +12,7 @@ public class App {
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--remote-allow-origins=*");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
 
         driver.get("https://www.saucedemo.com");
         driver.manage().window().maximize();
